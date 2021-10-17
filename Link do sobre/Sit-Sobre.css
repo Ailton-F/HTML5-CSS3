@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('../img/back1.png');
+  font: 14px 'Bellota Text';
+  height: 100vh;  
+  background-position: center;
+}
+
+header{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div{
+  height: 100vh;
+}
+
+.menu {
+  background-color: #4d0606;
+  border-bottom: 3px solid #ff8c00;
+  border-bottom-style: inset;
+  width: 100vw;
+  top: 0;
+  position: fixed;
+  top: 0;
+}
+
+.menu ul{
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu li {
+  list-style: none;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.menu a{
+  display: block;
+  padding: 5px 10px;
+}
+
+a {
+  color: #fbb03b;
+  text-decoration: none;
+}
+
+.title {
+  color:#fbb03b;
+  text-align: center;
+  margin-top: 2em ;
+  font-size: 100px;
+  font-family: 'Poppins';
+}
+
+.text, 
+.contact {
+  color:#fbb03b;
+  margin: 20px;
+}
+
+.contact {
+  margin-bottom: 500px;
+}
+
+.contact a:hover{
+  text-decoration: underline;
+}
+
+ul li a:hover {
+	background: #3a0505;
+	border-radius: 4px;
+}
+
+@media (min-width: 400px) {
+  body{
+    font-size: 14px;
+    justify-content: center;
+  }
+
+  .menu {
+    width: 100vw;
+  }
+
+  .title{
+    margin-top: 1.5rem;
+  }
+
+  .text,
+  .contact{
+    margin: 1.75em;
+  }
+}
